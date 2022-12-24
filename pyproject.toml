@@ -1,0 +1,54 @@
+[tool.poetry]
+name = "api-final-yatube"
+version = "0.1.0"
+description = ""
+authors = ["Марина Ежова <marickyarick@gmail.com>"]
+readme = "README.md"
+packages = [{include = "api_final_yatube"}]
+
+[tool.poetry.dependencies]
+python = "^3.7"
+Django = "3.2.16"
+pytest = "6.2.4"
+pytest-pythonpath = "0.7.3"
+pytest-django = "4.4.0"
+djangorestframework = "3.12.4"
+djangorestframework-simplejwt = "4.7.2"
+Pillow = "9.3.0"
+PyJWT = "2.1.0"
+requests = "2.26.0"
+djoser = "^2.1.0"
+
+
+[tool.poetry.group.flake.dependencies]
+flake8-absolute-import = "^1.0.0.1"
+flake8-bugbear = "^22.12.6"
+flake8-broken-line = "^0.6.0"
+flake8-cognitive-complexity = "^0.1.0"
+flake8-commas = "^2.1.0"
+flake8-comprehensions = "^3.10.1"
+flake8-eradicate = "^1.4.0"
+flake8-fixme = "^1.1.1"
+flake8-isort = "^6.0.0"
+flake8-multiline-containers = "^0.0.19"
+flake8-mutable = "^1.2.0"
+flake8-pep3101 = "^2.0.0"
+flake8-pie = "^0.16.0"
+flake8-print = "^5.0.0"
+flake8-printf-formatting = "^1.1.2"
+flake8-quotes = "^3.3.2"
+flake8-return = "^1.2.0"
+flake8-simplify = "^0.19.3"
+flake8-todo = "^0.7"
+pep8-naming = "^0.13.3"
+flake8-variables-names = "^0.0.5"
+flake8-use-fstring = "^1.4"
+
+
+[tool.poetry.group.dev.dependencies]
+black = "^22.12.0"
+mypy = "^0.991"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
