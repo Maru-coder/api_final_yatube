@@ -9,7 +9,7 @@ class Group(models.Model):
     slug = models.SlugField('ссылка', max_length=50, unique=True)
     description = models.TextField('описание')
 
-    def __str__(self):
+    def __str__(self) -> str:
         return self.title
 
 
@@ -31,7 +31,7 @@ class Post(models.Model):
     )
     image = models.ImageField(upload_to='posts/', null=True, blank=True)
 
-    def __str__(self):
+    def __str__(self) -> str:
         return self.text
 
 
@@ -52,6 +52,9 @@ class Comment(models.Model):
         auto_now_add=True,
         db_index=True,
     )
+
+    def __str__(self) -> str:
+        return self.text
 
 
 class Follow(models.Model):
@@ -76,3 +79,6 @@ class Follow(models.Model):
                 name='unique_following',
             ),
         ]
+
+    def __str__(self) -> str:
+        return 'follows'

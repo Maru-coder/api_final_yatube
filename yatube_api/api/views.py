@@ -1,7 +1,9 @@
 from rest_framework import filters, mixins, viewsets
 from rest_framework.pagination import LimitOffsetPagination
 from rest_framework.permissions import (
-    IsAuthenticated, IsAuthenticatedOrReadOnly)
+    IsAuthenticated,
+    IsAuthenticatedOrReadOnly,
+)
 from rest_framework.viewsets import GenericViewSet
 
 from api.permissions import IsSafeMethodOrIsAuthor
@@ -42,8 +44,7 @@ class CommentViewSet(viewsets.ModelViewSet):
         )
 
     def get_queryset(self):
-        post = get_post(self)
-        return post.comments.select_related('author')
+        return get_post(self).comments.select_related('author')
 
 
 class GroupViewSet(viewsets.ReadOnlyModelViewSet):
