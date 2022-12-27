@@ -81,4 +81,4 @@ class Follow(models.Model):
         ]
 
     def __str__(self) -> str:
-        return 'follows'
+        return f'{self.user} follows {self.following}'

@@ -572,7 +572,7 @@ python-versions = "*"
 name = "isort"
 version = "5.11.4"
 description = "A Python utility / library to sort Python imports."
-category = "dev"
+category = "main"
 optional = false
 python-versions = ">=3.7.0"
 
@@ -1009,7 +1009,7 @@ testing = ["flake8 (<5)", "func-timeout", "jaraco.functools", "jaraco.itertools"
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.7"
-content-hash = "9a9f3ee48c9b2a3cdcf27043dfbdbd76ec23808fa492420a2e4168c2a7cf54a4"
+content-hash = "6d0c44af6d382a9755a78faf638fa95aaf1004a21e1c308a847b9c5a36bba417"
 
 [metadata.files]
 asgiref = [

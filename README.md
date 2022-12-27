@@ -1,7 +1,6 @@
-
 # *API_Yatube*
 
-### Описание
+## Описание
 
 API для Yatube
 
@@ -40,6 +39,7 @@ make migrate
 ```bash
 make run
 ```
+
 ### Авторы
 
 Ежова Марина
